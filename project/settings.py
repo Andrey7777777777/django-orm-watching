@@ -17,14 +17,14 @@ DATABASES = {
 
 INSTALLED_APPS = ['datacenter']
 
-SECRET_KEY = env.str('SECRET_KEY')
+SECRET_KEY = 'REPLACE_ME'
 
 
-DEBUG = env.bool('DEBUG_MODE')
+DEBUG = False
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['*']
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
